@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MasterPageDemo.Site1" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Master Page Concept</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="custom.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="webForm1.aspx"> CRUD Operation With GridView</a></li>
+                    </ul>
+            </nav>
+        </div>
+        <aside id ="side">
+            <h1>Employees Details Section</h1>
+            <h1>This Section Include :- </h1>
+            <br /><br />
+            <h> ID Of the Employees</h>
+            <br /><br />
+            <h> Name Of the Employees</h>
+            <br /><br />
+            <h> Department Of the Employees</h>
+            <br /><br />
+            <h> Salary Of the Employees</h>
+            <br /><br />
+            <h> Location Of the Employees</h>
+            <br />
+
+        </aside>
+        <div id ="contentSec">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer id="Footer">
+           All Rights Reserved with My Websites &copy 2021 Traning.
+        </footer>
+    </form>
+</body>
+</html>
